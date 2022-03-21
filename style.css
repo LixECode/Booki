@@ -579,6 +579,17 @@ background-color: white;
 
 /*RESPONSIVE*/
 
+@media (max-width: 1031px) {
+    .hostingBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hostingCard {
+        width: 100%;
+    }
+}
+
 @media (max-width: 992px) {
 
     .hostingSection {
