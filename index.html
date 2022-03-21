@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class="container">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/ba64d1ea0b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
+    <header class="container">
         <img src="assets/logo/Booki.png" alt="logo Booki">
         <nav>
             <ul>
-                <li><a href="#hostingSection">Hébergements</a></li>
+                <li><a href="#hosting">Hébergements</a></li>
                 <li><a href="#activity">Activités</a></li>
             </ul>
         </nav>
@@ -26,16 +27,19 @@
 <main class="container">
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
-        <div class="input">
-            <i class="fa-solid fa-location-dot"></i>
+        <div class="inputBox">
+            <i class="fa-solid fa-location-dot location"></i>
             <input type="text" value="Marseille, France"/> 
-            <a href="#">Rechercher</a><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="search">Rechercher</a><a href="#" class="glass"><i class="fa-solid fa-magnifying-glass "></i></a>
         </div>
 
         <div class="filter"> 
             <span>Filtres</span>    
             <ul>
-                <li><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Économique</a></li>
+                <li>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <a href="#">Économique</a>
+                </li>
                 <li><a href="#"><i class="fa-solid fa-child"></i>Familial</a></li>
                 <li><a href="#"><i class="fa-solid fa-heart"></i>Romantique</a></li>
                 <li><a href="#"><i class="fa-solid fa-dog"></i>Animaux autorisés</a></li>
@@ -43,7 +47,7 @@
         </div>
         <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-    <section class="hostingSection">
+    <section id="hosting" class="hostingSection">
         <div class="hosting">
             <h3>Hébergements à Marseille</h3>
                 <div class="hostingBox">
@@ -163,7 +167,7 @@
                 </div>
     </section>
 
-    <section class="activity">
+    <section id="activity" class="activity">
         <h3>Activités à Marseille</h3>
             <div class="activityBox">
                 <article class="cardLarge AnimCard" >
