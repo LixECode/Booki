@@ -480,9 +480,9 @@ background-color: white;
 }
 
 .hosting {
-    width: 80%;
     height: 100%;
     padding: 3% 3% 2% 3%;
+    flex: 1;
 }
 
 .hostingBox {
@@ -529,7 +529,7 @@ background-color: white;
 /*boxes*/
 
 .popular {
-    width: 30%;
+    width: 400px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -579,25 +579,8 @@ background-color: white;
 
 /*RESPONSIVE*/
 
-@media (max-width: 1400px) {
-    .hostingSection {
-        gap: 20px;
-        margin-left: 20px;
-    }
+@media (max-width: 992px) {
 
-  
-}
-
-@media (max-width: 1300px) {
-    .hostingSection {
-        gap: 10px;
-        margin-left: 10px;
-    }
-
- 
-}
-
-@media (max-width: 1200px) {
     .hostingSection {
         gap: 0;
         margin-left: 10px;
