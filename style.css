@@ -451,6 +451,18 @@ background-color: white;
     -o-border-radius: 18px;
 }
 
+/*cardResponsive*/
+
+@media (max-width: 992px) {
+    .AnimCard {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+}
+}
+
 /*boxes*/
 
 .hosting, .popular, footer {
@@ -475,7 +487,7 @@ background-color: white;
     display : flex;
     justify-content: center;
     gap: 30px;
-    margin-left: 30px 0 20px 30px;
+    margin: 30px 0 20px 30px;
 
 }
 
@@ -682,8 +694,10 @@ background-color: white;
     gap: 30px; 
 }
 
-.cardvertical {
+.cardVertical {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /*cards*/
@@ -722,10 +736,6 @@ background-color: white;
     height: 75%;
 }
 
-.imgSmall1, .imgMedium2 {
-    margin-top: 40px;
-}
-
 /*global*/
 
 .activity h4 {
@@ -734,12 +744,17 @@ background-color: white;
 
 /*RESPONSIVE*/
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
+
+    .activity {
+        margin: 50px 0 50px 5px;
+    }
 
     .activityBox {
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .cardLarge {
@@ -752,22 +767,25 @@ background-color: white;
         width: 100%;
         min-width: 340px;
         min-height: 240px;
+        margin: 0;
     }
 
     .cardSmall {
         width: 100%;
         min-width: 340px;
         min-height: 180px;
+        margin: 0;
+    }
+
+    .cardVertical {
+        gap: 30px;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-
-    #activity {
-        margin-left: 0;
-    }
-
     .activity {
+        margin-left: 0;
         min-width: 375px;
     }
 }
