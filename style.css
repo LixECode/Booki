@@ -13,6 +13,15 @@
     margin: 0 auto;
 }
 
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 /*FONTS*/
 
 
@@ -129,7 +138,6 @@ header img {
     }
 
     header nav {
-        margin-top: 30px;
         min-width: 275px;
         width: 100%;
     }
@@ -140,7 +148,7 @@ header img {
 
     header li {
         width: 100%;
-        padding: 0 0 10px 0;
+        padding-bottom: 10px;
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
@@ -204,7 +212,7 @@ main {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    margin: 20px 0 15px 5px;
+    margin: 20px 0 15px 0;
 }
 
 input {
@@ -347,10 +355,6 @@ main p i{
         margin-top: 20px;
     }
 
-    h1, h2 {
-        margin-left: 5px;
-    }
-
     .inputBox {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -381,13 +385,18 @@ main p i{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 5px;
     min-width: 375px;
 }
 
 .filter li {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
+
+main p {
+    margin-left: 15px;
+}
+
+
 }
 
 /*_______________________________________GLOBAL SPECS______________________________________*/
@@ -598,7 +607,6 @@ background-color: white;
 
     .hostingSection {
         gap: 0;
-        margin-left: 10px;
         display:flex;
         flex-direction: column;
     }
@@ -628,7 +636,6 @@ background-color: white;
     .popular {
         order: -1;
         width: 100%;
-        margin-right: 20px;
         margin-bottom: 20px;
     }
 
@@ -643,7 +650,6 @@ background-color: white;
 @media (max-width: 768px) {
 
     .hostingSection {
-        margin-left: 0;
     }
 
     .hosting {
@@ -748,7 +754,7 @@ background-color: white;
 @media (max-width: 992px) {
 
     .activity {
-        margin: 50px 0 50px 5px;
+        margin: 50px 0 50px 0;
     }
 
     .activityBox {
@@ -768,25 +774,22 @@ background-color: white;
         width: 100%;
         min-width: 340px;
         min-height: 240px;
-        margin: 0;
     }
 
     .cardSmall {
         width: 100%;
         min-width: 340px;
         min-height: 180px;
-        margin: 0;
     }
 
     .cardVertical {
-        gap: 30px;
+        gap: 40px;
         width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     .activity {
-        margin-left: 0;
         min-width: 375px;
     }
 }
@@ -826,7 +829,6 @@ footer ul li:nth-child(1) {
 @media (max-width: 768px) {
 
     footer {
-        padding-left: 20px;
         display: flex;
         flex-direction: column;
         min-width: 340px;
