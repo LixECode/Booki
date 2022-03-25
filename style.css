@@ -13,12 +13,11 @@
     margin: 0 auto;
 }
 
-/*RESPONSIVE*/
+/*globalResponsive*/
 
 @media (max-width: 768px) {
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 10px;
     }
 }
 
@@ -30,13 +29,13 @@
 h1 {
     font-weight: 700;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 60px;
 }
 
 h2 {
     font-weight: 500;
     font-size: 18px;
-    margin: 5px 0 5px 0;
+    margin: 5px 0 5px 60px;
 }
 
 /*Section title*/
@@ -44,8 +43,6 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 10px 0 20px 10px;
-    padding: 0;
 }
 
 /*Card titles*/
@@ -62,6 +59,14 @@ h5 {
     font-weight: 400;
     margin: 0;
     padding-left: 10px;
+}
+
+/*titleResponsive*/
+
+@media (max-width: 768px) {
+    h1,h2 {
+        padding-left: 10px;
+    }
 }
 
 /*_______________________________________HEADER______________________________________*/
@@ -140,6 +145,7 @@ header img {
     header nav {
         min-width: 275px;
         width: 100%;
+        padding-bottom: 0;
     }
 
     header ul {
@@ -201,7 +207,6 @@ header img {
 main {
     width: 100%;
     height: auto;
-    margin-top: 40px;
     white-space: normal;
 }
 
@@ -212,7 +217,7 @@ main {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    margin: 20px 0 15px 0;
+    margin: 20px 0 15px 60px;
 }
 
 input {
@@ -271,7 +276,7 @@ input {
     font-weight: 600;
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 60px;
 }
 
 .filter ul {
@@ -329,18 +334,23 @@ input {
 
 /*global*/
 
-main p {
+.information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 20px;
+    margin-left: 60px;
+    padding-bottom: 20px;
 }
 
-main p i{
-    margin-right: 12px;
+.information i{
+    margin-right: 15px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 2px solid #D9D9D9;
+    border: 1px solid #D9D9D9;
     padding: 5px 10px 5px 10px;
     font-size: 16px;
     color:#0065FC;
@@ -351,13 +361,8 @@ main p i{
 
 @media (max-width: 768px) {
 
-    main {
-        margin-top: 20px;
-    }
-
     .inputBox {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 40px 0 40px 10px;
     }
     
     .inputBox .search {
@@ -389,14 +394,14 @@ main p i{
 }
 
 .filter li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 
-main p {
-    margin-left: 15px;
+.information {
+    margin-left: 10px;
+    align-items: flex-start;
 }
-
-
 }
 
 /*_______________________________________GLOBAL SPECS______________________________________*/
@@ -479,22 +484,32 @@ background-color: white;
     -o-border-radius: 18px;
 }
 
+/*boxesResponsive*/
+
+@media (max-width: 768px) {
+    .hosting, .popular, .activity {
+        margin-top: 20px;
+}
+}
+
 /*_______________________________________HOSTING______________________________________*/
 
 
 /*boxes*/
 
 .hostingSection {
-    display : flex;
+    display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 30px 0 20px 0px;
-
+    flex-wrap: wrap;
+    align-content: center;
+    margin: auto;
+    width: 90%;
+    gap: 3%;
 }
 
 .hosting {
     height: 100%;
-    padding: 3% 3% 2% 3%;
+    padding: 3% 3% 1% 3%;
     flex: 1;
 }
 
@@ -510,11 +525,11 @@ background-color: white;
 /*cards*/
 
 .hostingCard {
-    width: 270px;
+    width: 230px;
     height: 220px;
     line-height: 1px;
     padding-bottom: 2%;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
 }
 
 /*img*/
@@ -547,7 +562,7 @@ background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3% 3% 0 3%;
+    padding: 3% 3% 1% 3%;
 }
 
 .popular div:first-child {
@@ -561,13 +576,13 @@ background-color: white;
 .popularCard {
     width: 320px;
     height: 160px;
-    margin-bottom: 11%;
+    margin-bottom: 9%;
 }
 
 /*img*/
 
 .popularCard img {
-    width: 50%;
+    width: 45%;
     height: 100%;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
@@ -582,11 +597,19 @@ background-color: white;
 }
 
 .popular h5 {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
+}
+
+.popular h4, .popular h5 {
+    margin-left: 45%;
 }
 
 .popular div:first-child i {
     font-size: 25px;
+}
+
+.popular .starRating {
+padding-left: 10px;
 }
 
 
@@ -649,9 +672,6 @@ background-color: white;
 
 @media (max-width: 768px) {
 
-    .hostingSection {
-    }
-
     .hosting {
         padding: 0;
         min-width: 375px;
@@ -668,7 +688,6 @@ background-color: white;
     }
 
     .popular {
-        margin-bottom: 20px;
         min-width: 375px;
         border-radius: 0;
         -webkit-border-radius: 0;
@@ -682,7 +701,7 @@ background-color: white;
     }
 
     .hosting p{
-        margin-left: 0;
+        margin-left: 5px;
     }
 }
 
@@ -692,12 +711,12 @@ background-color: white;
 
 .activity {
     width: 100%;
-    margin: 50px 0 50px 0px;
 }
 
 .activityBox {
     display: flex;
     flex-wrap: wrap; 
+    justify-content: center;
     gap: 40px; 
 }
 
@@ -710,17 +729,17 @@ background-color: white;
 /*cards*/
 
 .cardLarge  {
-    width: 320px;
-    height: 460px;
+    width: 300px;
+    height: 440px;
 }
 
 .cardMedium {
-    width: 340px;
-    height: 240px;
+    width: 300px;
+    height: 200px;
 }
 
 .cardSmall {
-    width: 340px;
+    width: 300px;
     height: 180px;
 }
 
@@ -732,21 +751,21 @@ background-color: white;
 }
 
 .cardLarge img {
-    height: 90%;
+    height: 86%;
 }
 
 .cardMedium img {
-    height: 80%;
+    height: 70%;
 }
 
 .cardSmall img {
-    height: 75%;
+    height: 65%;
 }
 
 /*global*/
 
 .activity h4 {
-    margin: 10px 0 0 10px;
+    margin: 15px 0 0 10px;
 }
 
 /*RESPONSIVE*/
@@ -765,20 +784,20 @@ background-color: white;
     }
 
     .cardLarge {
-        min-width: 340px;
-        min-height: 460px;
+        min-width: 300px;
+        min-height: 440px;
         width: 100%;
     }
     
     .cardMedium {
         width: 100%;
-        min-width: 340px;
-        min-height: 240px;
+        min-width: 300px;
+        min-height: 200px;
     }
 
     .cardSmall {
         width: 100%;
-        min-width: 340px;
+        min-width: 300px;
         min-height: 180px;
     }
 
