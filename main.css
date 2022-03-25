@@ -1,11 +1,10 @@
-/*_______________________________________GLOBAL______________________________________*/
-
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    padding: 0;
     text-decoration: none;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
    }
 
 .container {
@@ -13,12 +12,12 @@
     margin: 0 auto;
 }
 
-/*globalResponsive*/
+/*boxes*/
 
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
+main {
+    width: 100%;
+    height: auto;
+    white-space: normal;
 }
 
 /*FONTS*/
@@ -29,13 +28,11 @@
 h1 {
     font-weight: 700;
     font-size: 25px;
-    margin: 0 0 10px 60px;
 }
 
 h2 {
     font-weight: 500;
     font-size: 18px;
-    margin: 5px 0 5px 60px;
 }
 
 /*Section title*/
@@ -57,7 +54,6 @@ h4 {
 h5 {
     font-size: 15px;
     font-weight: 400;
-    margin: 0;
     padding-left: 10px;
 }
 
@@ -98,15 +94,25 @@ section img {
     }
 
 article {
-box-shadow: 0px 0px 20px #c2c1c1;
-background-color: white;
-}
+    box-shadow: 0px 0px 20px #c2c1c1;
+    background-color: white;
+    }
 
 .hosting article, .popular article {
     border: 4px solid white;
 }
 
-.hostingCard, .popularCard {
+/*boxes*/
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hosting, .popular, footer {
+    background-color: #F2F2F2;
+}
+
+.hosting, .popular, .activity article, .hostingCard, .popularCard  {
     border-radius: 18px;
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
@@ -114,7 +120,7 @@ background-color: white;
     -o-border-radius: 18px;
 }
 
-/*cardResponsive*/
+/*Responsive*/
 
 @media (max-width: 992px) {
     .AnimCard {
@@ -126,24 +132,9 @@ background-color: white;
 }
 }
 
-/*boxes*/
-
-.hosting, .popular, footer {
-    background-color: #F2F2F2;
-}
-
-.hosting, .popular, .activity article {
-    border-radius: 18px;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    -o-border-radius: 18px;
-}
-
-/*boxesResponsive*/
-
 @media (max-width: 768px) {
-    .hosting, .popular, .activity {
-        margin-top: 20px;
-}
+    .container {
+        padding: 15px;
+    }
+
 }
