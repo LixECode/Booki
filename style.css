@@ -664,7 +664,12 @@ background-color: white;
     .popular {
         margin-bottom: 20px;
         min-width: 375px;
-    }
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
 
     .popular h3 i {
         margin-left: 80px;
