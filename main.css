@@ -40,6 +40,7 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 700;
+    padding-bottom: 30px;
 }
 
 /*Card titles*/
@@ -48,12 +49,14 @@ h4 {
     font-size: 17px;
     font-weight: 700;
     letter-spacing: -.5px;
-    padding-left: 10px;
 }
 
 h5 {
     font-size: 15px;
     font-weight: 400;
+}
+
+h4, h5, .starRating {
     padding-left: 10px;
 }
 
@@ -62,9 +65,9 @@ h5 {
 
 .starRating {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     color: #0065FC;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 /*img*/
