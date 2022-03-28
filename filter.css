@@ -1,205 +1,212 @@
 /*global*/
-.filter, .inputBox, .information, h1, h2 {
-    margin-left: 80px;
+.filter,
+.inputBox,
+.information,
+h1,
+h2 {
+  margin-left: 80px;
 }
 
 /*input*/
 
 .inputBox {
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 20px 0 10px 0;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px 0 10px 0;
 }
 
 input {
-    max-width: 250px;
-    border: 1px solid #F2F2F2;
-    padding: 15px 20px 15px 20px;
-    border-left: none;
-    border-right: none;
-    color: black;
-    font-weight: 700;
-    font-size: 20px;
+  max-width: 250px;
+  border: 1px solid #f2f2f2;
+  padding: 15px 20px 15px 20px;
+  border-left: none;
+  border-right: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .inputBox .location {
-    padding: 16px 20px 16px 20px;
-    font-size: 20px;
-    border-radius: 18px 0 0 18px;
-    -webkit-border-radius: 18px 0 0 18px;
-    -moz-border-radius: 18px 0 0 18px;
-    -ms-border-radius: 18px 0 0 18px;
-    -o-border-radius: 18px 0 0 18px;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
+  padding: 16px 20px 16px 20px;
+  font-size: 20px;
+  border-radius: 18px 0 0 18px;
+  -webkit-border-radius: 18px 0 0 18px;
+  -moz-border-radius: 18px 0 0 18px;
+  -ms-border-radius: 18px 0 0 18px;
+  -o-border-radius: 18px 0 0 18px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .inputBox a {
-    padding: 15px 20px 15px 20px;
-    border-radius: 0 12px 12px 0;
-    -webkit-border-radius: 0 12px 12px 0;
-    -moz-border-radius: 0 12px 12px 0;
-    -ms-border-radius: 0 12px 12px 0;
-    -o-border-radius: 0 12px 12px 0;
-    font-size: 20px;
-    color: white;
-    background-color:#0065FC;
-    font-weight: 600;
+  padding: 15px 20px 15px 20px;
+  border-radius: 0 12px 12px 0;
+  -webkit-border-radius: 0 12px 12px 0;
+  -moz-border-radius: 0 12px 12px 0;
+  -ms-border-radius: 0 12px 12px 0;
+  -o-border-radius: 0 12px 12px 0;
+  font-size: 20px;
+  color: white;
+  background-color: #0065fc;
+  font-weight: 600;
 }
 
 .inputBox .glass {
-    display: none;
+  display: none;
 }
 
 .inputBox a:hover {
-    background-color: #DEEBFF;
-    color: #0065FC;
+  background-color: #deebff;
+  color: #0065fc;
 }
 
-.inputBox input:focus{
-    outline: none;
+.inputBox input:focus {
+  outline: none;
 }
 
 /*filters*/
 
 .filter {
-    width: 100%;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    padding: 30px 0 30px 0;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 30px 0 30px 0;
 }
 
 .filter ul {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .filter li {
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 50px;
-    border: 2px solid #D9D9D9;
-    border-radius: 50px;
-   -moz-border-radius: 50px;
-   -ms-border-radius: 50px;
-   -o-border-radius: 50px;
-   -webkit-border-radius: 50px;
-   padding: 0 15px 0 60px;
-   font-size: 20px;
-   font-weight: 700;
-   margin-right: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  border: 2px solid #d9d9d9;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  padding: 0 15px 0 60px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 30px;
 }
 
 .filter li i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    height: 50px;
-    width: 50px;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    -webkit-border-radius: 45% 50% 50% 45%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    color: #0065FC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 50px;
+  width: 50px;
+  background-color: #deebff;
+  border-radius: 50%;
+  -webkit-border-radius: 45% 50% 50% 45%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #0065fc;
 }
 
 .filter li:hover {
-    color:#0065FC;
-    background-color: #DEEBFF;
-    border-color: #DEEBFF;
+  color: #0065fc;
+  background-color: #deebff;
+  border-color: #deebff;
 }
 
 .filter span {
-    font-size: 20px;
-    font-weight: 800;
-    margin-right: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  margin-right: 20px;
 }
 
 /*global*/
 
 .information {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 20px;
-    padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px 0 10px 0;
 }
 
-.information i{
-    margin-right: 15px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border: 1px solid #D9D9D9;
-    padding: 5px 10px 5px 10px;
-    font-size: 16px;
-    color:#0065FC;
-    font-weight: 900;
+.information i {
+  margin-right: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  color: #0065fc;
+  font-weight: 900;
 }
 
 /*RESPONSIVE*/
 
 @media (max-width: 768px) {
+  .filter,
+  .inputBox,
+  .information,
+  h1,
+  h2 {
+    margin-left: 0;
+  }
 
-    .filter, .inputBox, .information, h1, h2 {
-        margin-left: 0;
-    }
-    
-    .inputBox {
-        padding-top: 40px;
-    }
-    .inputBox .search {
-        display: none;
-    }
-    
-    .inputBox .glass {
-        display: inline;
-        padding: 15px 14px 12px 14px;
-        border-radius: 16px;
-        -webkit-border-radius: 16px;
-        -moz-border-radius: 16px;
-        -ms-border-radius: 16px;
-        -o-border-radius: 16px;
-        font-size: 15px;
-        color: white;
-        background-color:#0065FC;
-        font-weight: 600;
-        position: relative;
-        left: -4%;
-        border: 3px solid #0065FC;
-}
+  .inputBox {
+    padding-top: 40px;
+  }
+  .inputBox .search {
+    display: none;
+  }
 
-.filter {
+  .inputBox .glass {
+    display: inline;
+    padding: 15px 14px 12px 14px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    font-size: 15px;
+    color: white;
+    background-color: #0065fc;
+    font-weight: 600;
+    position: relative;
+    left: -4%;
+    border: 3px solid #0065fc;
+  }
+
+  .filter {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     min-width: 375px;
     padding-bottom: 10px;
-}
+  }
 
-.filter li {
+  .filter li {
     margin-bottom: 15px;
     margin-right: 10px;
-}
+  }
 
-.filter span {
+  .filter span {
     padding-bottom: 20px;
-}
+  }
 
-.information {
+  .information {
     margin-left: 10px;
     align-items: flex-start;
-}
+  }
 }
