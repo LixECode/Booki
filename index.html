@@ -10,18 +10,18 @@
     <title>Booki</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="filter.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="hosting.css">
-    <link rel="stylesheet" href="activity.css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="filter.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="hosting.css" />
+    <link rel="stylesheet" href="activity.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-   
+
     <script
       src="https://kit.fontawesome.com/ba64d1ea0b.js"
       crossorigin="anonymous"
@@ -46,7 +46,9 @@
         <i class="fa-solid fa-location-dot location"></i>
         <input type="text" value="Marseille, France" />
         <a href="#" class="search">Rechercher</a
-        ><a href="#" class="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+        ><a href="#" class="glass"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
       </div>
 
       <div class="filter">
@@ -171,55 +173,73 @@
           <p><a href="#">Afficher plus</a></p>
         </div>
         <div class="popular">
-          <div>
+          <div class="popularTitle">
             <h3>Les plus populaires</h3>
             <i class="fa-solid fa-chart-line"></i>
           </div>
-          <article class="popularCard AnimCard">
-            <img
-              src="assets/hosting/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-              alt="Hôtel Le Soleil du matin"
-            />
-            <h4>Hôtel Le Soleil du matin</h4>
-            <h5>Nuit à partir de <strong>128€</strong></h5>
-            <ul class="starRating">
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-            </ul>
-          </article>
-          <article class="popularCard AnimCard">
-            <img
-              src="assets/hosting/aw-creative-VGs8z60yT2c-unsplash.jpg"
-              alt="Au coeur de l'eau Chambres d'hôtes"
-            />
-            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-            <h5>Nuit à partir de <strong>71€</strong></h5>
-            <ul class="starRating">
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star" style="color: #f2f2f2"></i></li>
-            </ul>
-          </article>
-          <article class="popularCard AnimCard">
-            <img
-              src="assets/hosting/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-              alt="Hôtel Tout bleu et Blanc"
-            />
-            <h4>Hôtel Tout bleu et Blanc</h4>
-            <h5>Nuit à partir de <strong>68€</strong></h5>
-            <ul class="starRating">
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-solid fa-star" style="color: #f2f2f2"></i></li>
-            </ul>
-          </article>
+          <div class="popularBox">
+            <article class="popularCard AnimCard">
+              <div>
+                <img
+                  src="assets/hosting/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  alt="Hôtel Le Soleil du matin"
+                />
+              </div>
+              <div>
+                <h4>Hôtel Le Soleil du matin</h4>
+                <h5>Nuit à partir de <strong>128€</strong></h5>
+                <ul class="starRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </article>
+            <article class="popularCard AnimCard">
+              <div>
+                <img
+                  src="assets/hosting/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  alt="Au coeur de l'eau Chambres d'hôtes"
+                />
+              </div>
+              <div>
+                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                <h5>Nuit à partir de <strong>71€</strong></h5>
+                <ul class="starRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="popularCard AnimCard">
+              <div>
+                <img
+                  src="assets/hosting/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  alt="Hôtel Tout bleu et Blanc"
+                />
+              </div>
+              <div>
+                <h4>Hôtel Tout bleu et Blanc</h4>
+                <h5>Nuit à partir de <strong>68€</strong></h5>
+                <ul class="starRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 

@@ -1,58 +1,63 @@
 /*boxes*/
 
 .hostingSection {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    margin: auto;
-    width: 90%;
-    gap: 3%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+  width: 90%;
+  gap: 2.5%;
 }
 
 .hosting {
-    height: 100%;
-    padding: 3% 3% 1% 3%;
-    flex: 1;
+  height: 100%;
+  height: auto;
+  padding: 3% 2% 4% 2%;
+  flex: 1;
 }
 
 .hostingBox {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    Align-items: center; 
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*cards*/
 
 .hostingCard {
-    width: 230px;
-    height: 220px;
-    line-height: 1px;
-    padding-bottom: 2%;
-    margin-bottom: 4%;
+  width: 230px;
+  height: 200px;
+  line-height: 25px;
+  padding-bottom: 2%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*img*/
 
-.hostingCard img  {
-    height: 65%;
-    border-top-right-radius: 18px;
-    border-top-left-radius: 18px;
+.hostingCard img {
+  height: 65%;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  padding-bottom: 5px;
 }
 
 /*global*/
 
-.hostingCard .starRating {
-    padding-left: 10px;
+.hosting p {
+  font-size: 20px;
+  font-weight: 800;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
-.hosting p{
-    font-size: 20px;
-    font-weight: 800;
-    margin-left: 20px;
+.hosting h3 {
+  padding-left: 20px;
 }
 
 /*_______________________________________POPULAR______________________________________*/
@@ -60,150 +65,191 @@
 /*boxes*/
 
 .popular {
-    width: 400px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 3% 3% 1% 3%;
+  width: 400px;
+  height: auto;
+  padding: 3% 2% 0 2%;
 }
 
-.popular div:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.popularBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*cards*/
 
 .popularCard {
-    width: 320px;
-    height: 160px;
-    margin-bottom: 9%;
+  width: 340px;
+  height: 150px;
+  margin-bottom: 10%;
+}
+
+/*article*/
+
+.popular article {
+  display: flex;
+  flex-direction: row;
+}
+
+.popular article div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  padding: 2% 5% 1% 2%;
+}
+
+.popular article div:nth-child(2) .starRating {
+  padding-top: 20%;
 }
 
 /*img*/
 
 .popularCard img {
-    width: 45%;
-    height: 100%;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-    float: left;
-    padding-right: 10px;
+  width: 130px;
+  height: 100%;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
 }
 
 /*global*/
 
+.popularTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.popularTitle i {
+  font-size: 20px;
+}
+
 .popular h4 {
-    margin: 10px 0 5px 0;
+  line-height: 20px;
 }
-
-.popular h5 {
-    margin-bottom: 55px;
-}
-
-.popular h4, .popular h5 {
-    margin-left: 45%;
-}
-
-.popular div:first-child i {
-    font-size: 25px;
-}
-
-.popular .starRating {
-padding-left: 10px;
-}
-
 
 /*RESPONSIVE*/
 
-@media (max-width: 1031px) {
-    .hostingBox {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 1295px) {
+  .popular {
+    height: 100%;
+  }
+}
 
-    .hostingCard {
-        width: 100%;
-    }
+@media (max-width: 1031px) {
+  .hostingBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hostingCard {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
+  .hostingSection {
+    gap: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .hostingSection {
-        gap: 0;
-        display:flex;
-        flex-direction: column;
-    }
+  .hosting {
+    width: 100%;
+    padding: 0;
+    background: none;
+  }
 
-    .hosting {
-        width: 100%;
-        padding: 2% 2% 1% 2%;
-        background: none;
-    }
-    
-    .hostingBox {
-        display: flex;
-        flex-direction: column;
-    }
+  .hostingBox {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .hostingCard {
-        width: 100%;
-        height: 450px;
-        min-width: 270px;
-        min-height: 220px;
-    }
+  .hostingCard {
+    width: 100%;
+    height: 450px;
+    min-width: 270px;
+    min-height: 220px;
+  }
 
-    .hostingCard img  {
-        height: 83%;
-    }
+  .hostingCard img {
+    height: 83%;
+  }
 
-    .popular {
-        order: -1;
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .popular {
+    order: -1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .popularCard {
-        width: 100%;
-        margin-bottom: 5%;
-        min-width: 320px;
-        min-height: 160px;
-    }
+  .popularCard {
+    width: 100%;
+    margin-bottom: 5%;
+    min-width: 340px;
+    min-height: 150px;
+  }
+
+  .popular article div:nth-child(2) .starRating {
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 768px) {
+  .hosting {
+    padding: 8% 0 0 0;
+    min-width: 375px;
+  }
 
-    .hosting {
-        padding: 0;
-        min-width: 375px;
-    }
+  .hostingCard {
+    width: 100%;
+    height: 220px;
+    min-width: 270px;
+  }
 
-    .hostingCard {
-        width: 100%;
-        height: 220px;
-        min-width: 270px;
-    }
+  .hostingCard img {
+    height: 60%;
+  }
 
-    .hostingCard img  {
-        height: 60%;
-    }
+  .hosting p {
+    padding-left: 0;
+    padding-top: 10px;
+  }
 
-    .popular {
-        min-width: 375px;
-        border-radius: 0;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
-}
+  .hosting h3 {
+    padding-left: 1%;
+  }
 
-    .popular h3 i {
-        margin-left: 80px;
-    }
+  .popular {
+    min-width: 375px;
+    padding-bottom: 5%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
 
-    .hosting p{
-        margin-left: 5px;
-    }
+  .popularCard {
+    width: 340px;
+    height: 150px;
+  }
+
+  .popular h3 i {
+    margin-left: 80px;
+  }
+
+  .hosting p {
+    padding-left: 10px;
+  }
+
+  .popular article div:nth-child(2) .starRating {
+    padding-top: 15%;
+  }
+
+  .popularTitle {
+    padding: 10% 3% 1% 3%;
+  }
 }
