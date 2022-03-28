@@ -1,105 +1,146 @@
 /*boxes*/
 
 .activity {
-    width: 100%;
+  width: 100%;
 }
 
 .activityBox {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 40px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .cardVertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*cards*/
 
-.cardLarge  {
-    width: 300px;
-    height: 440px;
+.cardLarge {
+  width: 300px;
+  height: 440px;
 }
 
 .cardMedium {
-    width: 300px;
-    height: 200px;
+  width: 300px;
+  height: 200px;
 }
 
 .cardSmall {
-    width: 300px;
-    height: 180px;
+  width: 300px;
+  height: 180px;
 }
 
 /*img*/
 
 .activity img {
-    border-top-right-radius: 18px;
-    border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
 }
 
 .cardLarge img {
-    height: 86%;
+  height: 86%;
 }
 
 .cardMedium img {
-    height: 70%;
+  height: 70%;
 }
 
 .cardSmall img {
-    height: 65%;
+  height: 65%;
 }
 
 /*global*/
 
+.activity h3 {
+  padding-left: 60px;
+}
+
 .activity h4 {
-    margin: 15px 0 0 10px;
+  margin: 15px 0 0 10px;
 }
 
 /*RESPONSIVE*/
 
+@media (max-width: 1319px) {
+  .imgMedium2 {
+    margin-top: 40px;
+  }
+}
+
 @media (max-width: 992px) {
 
-    .activity {
-        margin: 50px 0 50px 0;
-    }
+  .activityBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .activityBox {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .cardLarge {
+      width: 100%;
+    min-width: 270px;
+    height: 440px;
+  }
 
-    .cardLarge {
-        min-width: 300px;
-        min-height: 440px;
-        width: 100%;
-    }
-    
-    .cardMedium {
-        width: 100%;
-        min-width: 300px;
-        min-height: 200px;
-    }
+  .cardMedium {
+    width: 100%;
+    min-width: 270px;
+    height: 200px;
+  }
 
-    .cardSmall {
-        width: 100%;
-        min-width: 300px;
-        min-height: 180px;
-    }
+  .cardSmall {
+    width: 100%;
+    min-width: 270px;
+    height: 180px;
+  }
 
-    .cardVertical {
-        gap: 40px;
-        width: 100%;
-    }
+  .cardVertical {
+    gap: 40px;
+    width: 100%;
+  }
+
+  .imgMedium2 {
+    margin-top: 0;
+  }
+
+  .activity h3 {
+    padding-left: 20px;
+  }
+
 }
 
 @media (max-width: 768px) {
-    .activity {
-        min-width: 375px;
-    }
+  .activity {
+    width: 100%;
+    min-width: 270px;
+  }
+
+  .activityBox {
+    gap: 30px;
+  }
+
+.cardVertical {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+  .cardLarge, .cardMedium, .cardSmall {
+    width: 100%;
+    height: 220px;
+    min-width: 270px;
+  }
+
+  .activity img {
+    height: 75%;
+  }
+
+  .activity h3 {
+    padding-left: 5px;
+  }
+
 }
