@@ -59,6 +59,7 @@ input {
 
 .inputBox a:hover {
   background-color: #deebff;
+  border: 5px solid #deebff;
   color: #0065fc;
 }
 
@@ -127,7 +128,6 @@ input {
   color: black;
 }
 
-
 .filter span {
   font-size: 20px;
   font-weight: 800;
@@ -190,7 +190,7 @@ input {
     font-weight: 600;
     position: relative;
     left: -4%;
-    border: 3px solid #0065fc;
+    border: 5px solid #0065fc;
   }
 
   .filter {
