@@ -123,6 +123,11 @@ input {
   border-color: #deebff;
 }
 
+.filter a:visited {
+  color: black;
+}
+
+
 .filter span {
   font-size: 20px;
   font-weight: 800;
