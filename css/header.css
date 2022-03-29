@@ -41,15 +41,33 @@ header li:hover {
   color: #0065fc;
 }
 
+header li a:hover {
+  color: #0065fc;
+  font-weight: 600;
+}
+
 header li:active {
   padding: 40px 25px 0 25px;
   border-top: 3px solid #0065fc;
+}
+
+header li a:active {
   color: #0065fc;
+  font-weight: 600;
+}
+
+header li a:focus {
+  color: #0065fc;
+  font-weight: 600;
 }
 
 header li:visited {
   border-top: none;
   color: #d9d9d9;
+}
+
+header li:nth-child(2) a:visited {
+  color: black;
 }
 
 /*img*/
@@ -95,33 +113,35 @@ header img {
   }
 
   header li:hover {
-    padding: 0 50px 10px 50px;
+    padding: 0 25px 10px 25px;
     border-bottom: 3px solid #0065fc;
-    color: #0065fc;
     border-top: none;
   }
 
   header li:active {
-    padding: 0 50px 10px 50px;
+    padding: 0 25px 10px 25px;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
   }
 
   header li:focus {
-    padding: 0 50px 10px 50px;
+    padding: 0 25px 10px 25px;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
   }
 
   header li:visited {
-    padding: 0 50px 10px 50px;
+    padding: 0 25px 10px 25px;
     color: black;
   }
 
   header li:nth-child(2):visited {
-    padding: 0 50px 10px 50px;
-    color: #0065fc;
+    padding: 0 50px 10px 29px;
     border-bottom: 3px solid #f2f2f2;
+  }
+
+  header li:nth-child(2) a:visited {
+    color: black;
   }
 
   header img {

@@ -26,6 +26,10 @@ footer ul li:nth-child(1) {
   margin-top: 30px;
 }
 
+footer ul a:visited {
+  color: black;
+}
+
 /*RESPONSIVE*/
 
 @media (max-width: 768px) {

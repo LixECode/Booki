@@ -56,6 +56,11 @@
   padding-top: 20px;
 }
 
+.hosting p a:visited {
+  color: black;
+}
+
+
 .hosting h3 {
   padding-left: 20px;
 }
@@ -233,7 +238,8 @@
   }
 
   .popularCard {
-    width: 340px;
+    width: 100%;
+    min-width: 340px;
     height: 150px;
   }
 
