@@ -1,12 +1,3 @@
-/*global*/
-.filter,
-.inputBox,
-.information,
-h1,
-h2 {
-  margin-left: 80px;
-}
-
 /*input*/
 
 .inputBox {
@@ -70,7 +61,6 @@ input {
 /*filters*/
 
 .filter {
-  width: 100%;
   font-weight: 600;
   display: flex;
   align-items: center;
