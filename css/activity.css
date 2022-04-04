@@ -7,8 +7,7 @@
 .activityBox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 .cardVertical {
@@ -54,11 +53,6 @@
 }
 
 /*global*/
-
-.activity h3 {
-  padding-left: 60px;
-}
-
 .activity h4 {
   margin: 15px 0 0 10px;
 }
@@ -72,6 +66,7 @@
 }
 
 @media (max-width: 992px) {
+
   .activityBox {
     width: 100%;
     display: flex;
@@ -105,16 +100,13 @@
   .imgMedium2 {
     margin-top: 0;
   }
-
-  .activity h3 {
-    padding-left: 20px;
-  }
 }
 
 @media (max-width: 768px) {
   .activity {
     width: 100%;
     min-width: 270px;
+    margin-top: 5%;
   }
 
   .activityBox {

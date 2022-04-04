@@ -6,11 +6,12 @@ header {
   align-items: center;
   width: 100%;
   height: auto;
+  padding: 0 3% 0 3%;
 }
 
 header nav {
-  width: 20%;
   padding-bottom: 20px;
+  margin-right: 10px;
 }
 
 header ul {
@@ -74,7 +75,7 @@ header li:nth-child(2) a:visited {
 
 header img {
   height: 50px;
-  margin: 30px 0 0 90px;
+  margin: 30px 0 0 10px;
 }
 
 /*RESPONSIVE*/

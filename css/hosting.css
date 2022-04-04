@@ -5,10 +5,10 @@
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
   gap: 2.5%;
 }
+
 .hosting {
   height: 100%;
   height: auto;
@@ -21,7 +21,7 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -51,17 +51,11 @@
 .hosting p {
   font-size: 20px;
   font-weight: 800;
-  padding-left: 20px;
   padding-top: 20px;
 }
 
 .hosting p a:visited {
   color: black;
-}
-
-
-.hosting h3 {
-  padding-left: 20px;
 }
 
 /*_______________________________________POPULAR______________________________________*/
@@ -71,7 +65,7 @@
 .popular {
   width: 400px;
   height: auto;
-  padding: 3% 2% 0 2%;
+  padding: 3% 2% 1% 2%;
 }
 
 .popularBox {
@@ -155,7 +149,7 @@
 
 @media (max-width: 992px) {
   .hostingSection {
-    gap: 0;
+    gap: none;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -163,8 +157,9 @@
 
   .hosting {
     width: 100%;
-    padding: 0;
     background: none;
+    padding: 0;
+    margin-top: 5%;
   }
 
   .hostingBox {
@@ -186,7 +181,6 @@
   .popular {
     order: -1;
     width: 100%;
-    margin-bottom: 20px;
   }
 
   .popularCard {
@@ -203,7 +197,6 @@
 
 @media (max-width: 768px) {
   .hosting {
-    padding: 8% 0 0 0;
     min-width: 375px;
   }
 
@@ -228,12 +221,12 @@
 
   .popular {
     min-width: 375px;
-    padding-bottom: 5%;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    padding: 8% 6% 0 6%;
   }
 
   .popularCard {
@@ -254,7 +247,5 @@
     padding-top: 15%;
   }
 
-  .popularTitle {
-    padding: 10% 3% 1% 3%;
-  }
+
 }
