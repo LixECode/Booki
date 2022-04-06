@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3% 0 3%;
+  padding: 0 3% 0 2%;
 }
 
 header nav {
@@ -20,7 +20,9 @@ header ul {
 
 /*nav*/
 
-header li {
+header li,
+header li:hover,
+header li:active {
   padding: 40px 25px 0 25px;
   border-top: 3px solid #0065fc;
 }
@@ -33,27 +35,9 @@ header li:nth-child(2) {
   border-top: 3px solid white;
 }
 
-header li:hover {
-  padding: 40px 25px 0 25px;
-  border-top: 3px solid #0065fc;
-  color: #0065fc;
-}
-
-header li a:hover {
-  color: #0065fc;
-  font-weight: 600;
-}
-
-header li:active {
-  padding: 40px 25px 0 25px;
-  border-top: 3px solid #0065fc;
-}
-
-header li a:active {
-  color: #0065fc;
-  font-weight: 600;
-}
-
+header li:hover,
+header li a:hover,
+header li a:active,
 header li a:focus {
   color: #0065fc;
   font-weight: 600;
@@ -72,7 +56,7 @@ header li:nth-child(2) a:visited {
 
 header img {
   height: 50px;
-  margin: 30px 0 0 3px;
+  margin-top: 30px;
 }
 
 /*RESPONSIVE*/
@@ -122,11 +106,6 @@ header img {
   header li:active,
   header li:focus {
     border-bottom: 3px solid #0065fc;
-    color: #0065fc;
-  }
-
-  header li:active,
-  header li:focus {
     color: #0065fc;
   }
 

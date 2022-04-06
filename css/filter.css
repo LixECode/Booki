@@ -38,7 +38,6 @@ input {
   -moz-border-radius: 0 12px 12px 0;
   -ms-border-radius: 0 12px 12px 0;
   -o-border-radius: 0 12px 12px 0;
-  font-size: 20px;
   color: white;
   background-color: #0065fc;
   font-weight: 600;
@@ -48,11 +47,7 @@ input {
   display: none;
 }
 
-.inputBox a:hover {
-  background-color: #deebff;
-  color: #0065fc;
-}
-
+.inputBox a:hover,
 .inputBox a:active {
   background-color: #deebff;
   color: #0065fc;
@@ -156,7 +151,6 @@ input {
 }
 
 @media (max-width: 768px) {
-
   .global {
     margin: 0 15px 15px 15px;
   }

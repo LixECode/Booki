@@ -71,14 +71,12 @@
 }
 
 @media (max-width: 1276px) {
-
   .cardVertical:nth-of-type(2) {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 992px) {
-
   .activityBox {
     width: 100%;
     display: flex;
@@ -110,7 +108,7 @@
   }
 
   .imgMedium2,
-  .cardVertical:nth-of-type(2){
+  .cardVertical:nth-of-type(2) {
     margin-top: 0;
   }
 
@@ -118,7 +116,6 @@
   .cardVertical {
     gap: 30px;
   }
-
 }
 
 @media (max-width: 768px) {
