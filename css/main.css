@@ -50,14 +50,14 @@ h3 {
 /*Card titles*/
 
 h4 {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  padding-top: 2px;
 }
 
 h5 {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h4,
@@ -117,11 +117,6 @@ article {
 
 /*boxes*/
 
-.hostingSection,
-.activity {
-  padding-bottom: 5%;
-}
-
 .hosting,
 .popular,
 footer {
@@ -143,7 +138,6 @@ footer {
 /*Responsive*/
 
 @media (max-width: 992px) {
-
   .AnimCard {
     transition: none;
     -webkit-transition: none;
@@ -152,15 +146,21 @@ footer {
     -o-transition: none;
   }
 
-  section,
+  .popular,
   .hosting,
-  .popular {
-    padding: 2%;
+  .activity {
+    margin-bottom: 3%;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 2% 0 2%;
+    padding: 2%;
+  }
+
+  .popular,
+  .hosting,
+  .activity {
+    margin-bottom: 8%;
   }
 }

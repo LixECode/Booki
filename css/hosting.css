@@ -11,8 +11,7 @@
 
 .hosting {
   height: 100%;
-  height: auto;
-  padding: 3% 2% 4% 2%;
+  padding: 3% 3% 4% 3%;
   flex: 1;
 }
 
@@ -28,7 +27,7 @@
 /*cards*/
 
 .hostingCard {
-  width: 230px;
+  width: 240px;
   height: 200px;
   line-height: 25px;
   padding-bottom: 2%;
@@ -51,7 +50,11 @@
 .hosting p {
   font-size: 20px;
   font-weight: 800;
-  padding-top: 20px;
+  padding-top: 2%;
+}
+
+.hosting p a:hover {
+  color: #0065fc;
 }
 
 .hosting p a:visited {
@@ -63,9 +66,11 @@
 /*boxes*/
 
 .popular {
-  width: 400px;
-  height: auto;
-  padding: 3% 2% 1% 2%;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 100%;
+  padding: 3% 3% 0 3%;
 }
 
 .popularBox {
@@ -130,9 +135,9 @@
 
 /*RESPONSIVE*/
 
-@media (max-width: 1295px) {
-  .popular {
-    height: 100%;
+@media (max-width: 1360px) {
+  .hostingCard {
+    width: 100%;
   }
 }
 
@@ -159,7 +164,6 @@
     width: 100%;
     background: none;
     padding: 0;
-    margin-top: 5%;
   }
 
   .hostingBox {
@@ -222,10 +226,6 @@
   .popular {
     min-width: 375px;
     border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
     padding: 8% 6% 0 6%;
   }
 
@@ -246,6 +246,4 @@
   .popular article div:nth-child(2) .starRating {
     padding-top: 15%;
   }
-
-
 }
