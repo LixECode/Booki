@@ -8,7 +8,7 @@ footer {
 
 footer ul {
   width: 33.33%;
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
 footer ul li:nth-child(2),
@@ -41,6 +41,6 @@ footer ul a:visited {
 
   footer ul {
     width: 100%;
-    padding-left: 2%;
+    padding-left: 25px;
   }
 }
