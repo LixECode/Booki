@@ -12,6 +12,12 @@
   justify-content: space-between;
 }
 
+.activity article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .cardVertical {
   display: flex;
   flex-direction: column;
@@ -46,20 +52,21 @@
 }
 
 .cardLarge img {
-  height: 86%;
+  height: 87%;
 }
 
 .cardMedium img {
-  height: 70%;
+  height: 72%;
 }
 
 .cardSmall img {
-  height: 65%;
+  height: 67%;
 }
 
 /*global*/
 .activity h4 {
-  margin: 15px 0 0 10px;
+  margin-left: 10px;
+  padding-bottom: 20px;
 }
 
 /*RESPONSIVE*/
