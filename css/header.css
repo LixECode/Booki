@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3% 0 2%;
+  padding: 0 2% 0 2%;
 }
 
 header nav {
@@ -15,6 +15,7 @@ header ul {
   display: flex;
   justify-content: space-around;
   font-weight: 500;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -55,8 +56,9 @@ header li:nth-child(2) a:visited {
 /*img*/
 
 header img {
-  height: 50px;
+  height: 45px;
   margin-top: 30px;
+  padding-left: 20px;
 }
 
 /*RESPONSIVE*/

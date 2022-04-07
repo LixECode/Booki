@@ -31,19 +31,19 @@ section {
 
 h1 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 /*Section title*/
 
 h3 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   padding-bottom: 30px;
 }
 
@@ -106,7 +106,7 @@ section img {
 }
 
 article {
-  box-shadow: 0px 0px 20px #c2c1c1;
+  box-shadow: 0px 0px 10px #c2c1c1;
   background-color: white;
 }
 

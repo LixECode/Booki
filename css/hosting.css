@@ -11,7 +11,7 @@
 
 .hosting {
   height: 100%;
-  padding: 3% 3% 4% 3%;
+  padding: 3% 3% 3% 3%;
   flex: 1;
 }
 
@@ -48,7 +48,7 @@
 /*global*/
 
 .hosting p {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 800;
   padding-top: 2%;
 }
@@ -68,17 +68,10 @@
 .popular {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 420px;
   height: 100%;
   padding: 3% 3% 0 3%;
-}
-
-.popularBox {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*cards*/
@@ -86,7 +79,7 @@
 .popularCard {
   width: 340px;
   height: 150px;
-  margin-bottom: 10%;
+  margin-bottom: 8.5%;
 }
 
 /*article*/
